@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* EXTRA SMALL DEVICES (PORTRAIT PHONE, less than 576px) */
 @media (max-width: 575.98px) {
   // VARIABLES
@@ -538,3 +539,545 @@
   }
   // FEATURE END
 }
+=======
+/* EXTRA SMALL DEVICES (PORTRAIT PHONE, less than 576px) */
+@media (max-width: 575.98px) {
+  // VARIABLES
+  $section-margin: 20px 0;
+
+  // HEADER START
+  .header {
+    &__menu {
+      display: none;
+    }
+
+    &__toggler {
+      display: block;
+    }
+  }
+  // HEADER END
+
+  // HAMBURGER MENU START
+  .hamburger-menu {
+    display: block;
+    height: 87vh;
+  }
+  // HAMBURGER MENU END
+
+  // HERO START
+  .hero {
+    margin: $section-margin;
+    background-position: top right;
+    background-size: 100%;
+
+    &__container {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    &__content {
+      padding: 50px 0 10px;
+      width: 100%;
+    }
+
+    &__content-title h2 {
+      font-size: 28px;
+    }
+
+    &__content-buttons {
+      margin: 0 auto;
+
+      .button {
+        padding: 15px 30px;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+
+    .button a {
+      padding: 15px 25px;
+      font-size: 12px;
+    }
+
+    &__dummy-box {
+      padding: 110px 0;
+    }
+  }
+  // HERO END
+
+  // FEATURE START
+  .feature {
+    background-size: 100%;
+    background-position: left center;
+    height: auto;
+
+    &__tabs-button {
+      flex-direction: column;
+
+      button {
+        width: 100%;
+        margin: 0 auto;
+
+        &:hover,
+        &.active {
+          width: 80% !important;
+        }
+      }
+    }
+
+    .feature__tab {
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 50px;
+
+      & > * {
+        width: 100%;
+      }
+
+      &-image {
+        height: 220px;
+      }
+
+      &-contents {
+        text-align: center;
+      }
+    }
+  }
+  // FEATURE START
+
+  // DOWNLOAD START
+  .download {
+    :nth-child(2n) {
+      margin-top: 0;
+    }
+
+    :nth-child(3) {
+      margin-top: 0;
+    }
+
+    &__container {
+      flex-wrap: wrap;
+      gap: 30px;
+      width: 80%;
+    }
+
+    &__box {
+      width: 100%;
+      height: 240px;
+    }
+
+    &__button a {
+      padding: 15px 20px;
+    }
+  }
+  // DOWNLOAD END
+
+  // FAQ START
+  .faq {
+    &__container {
+      width: 80%;
+    }
+
+    &__question button {
+      font-size: 12px;
+    }
+  }
+  // FAQ END
+
+  // CONTACT US START
+  .contact {
+    &__form button {
+      margin-top: 20px;
+    }
+
+    &__form input {
+      padding: 16px 85px 15px 10px;
+    }
+  }
+  // CONTACT US END
+
+  // FOOTER START
+  .footer {
+    &__container {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+
+    &__link {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__menu {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .footer__link {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}
+
+// FOOTER END
+
+/* SMALL DEVICES (LANSCAPE PHONE, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  // VARIABLES
+  $section-margin: 30px 0;
+
+  // HEADER START
+  .header {
+    &__menu {
+      display: none;
+    }
+
+    &__toggler {
+      display: block;
+    }
+  }
+  // HEADER END
+
+  // HAMBURGER MENU START
+  .hamburger-menu {
+    display: block;
+    height: 86.4vh;
+  }
+  // HAMBURGER MENU END
+
+  // HERO START
+  .hero {
+    margin: $section-margin;
+    background-position: top right;
+    background-size: 100%;
+
+    &__container {
+      flex-direction: column-reverse;
+    }
+
+    &__content {
+      padding: 50px 0 10px;
+      width: 100%;
+    }
+
+    &__content-title h2 {
+      font-size: 45px;
+    }
+
+    &__content-text p {
+      max-width: 50ch;
+    }
+
+    &__dummy-box {
+      padding: 190px 0;
+    }
+  }
+  // HERO END
+
+  // FEATURE START
+  .feature {
+    background-size: 100%;
+    background-position: left center;
+    height: auto;
+
+    &__tabs-button {
+      flex-direction: column;
+
+      button {
+        width: 100%;
+        margin: 0 auto;
+
+        &:hover,
+        &.active {
+          width: 50% !important;
+        }
+      }
+    }
+
+    .feature__tab {
+      flex-direction: column;
+      gap: 0;
+      margin-top: 50px;
+
+      & > * {
+        width: 100%;
+      }
+
+      &__tab-image {
+        height: 300px;
+      }
+    }
+  }
+  // FEATURE START
+
+  // DOWNLOAD START
+  .download {
+    :nth-child(2n) {
+      margin-top: 0;
+    }
+
+    :nth-child(3) {
+      margin-top: 0;
+    }
+
+    &__container {
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    &__box {
+      width: 100%;
+      height: 280px;
+    }
+  }
+  // DOWNLOAD END
+
+  // FAQ START
+  .faq {
+    &__container {
+      width: 80%;
+    }
+  }
+  // FAQ END
+
+  // FOOTER START
+  .footer {
+    &__container {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    &__menu {
+      gap: 20px;
+    }
+  }
+  // FOOTER END
+}
+
+/* MEDIUM DEVICES (TABLETS, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  // VARIABLES
+  $section-margin: 30px 0;
+
+  // HEADER START
+  .header {
+    &__menu {
+      display: none;
+    }
+
+    &__toggler {
+      display: block !important;
+    }
+  }
+  // HEADER END
+
+  // HAMBURGER MENU START
+  .hamburger-menu {
+    display: block;
+  }
+  // HAMBURGER MENU END
+
+  // HERO START
+  .hero {
+    margin: $section-margin;
+    background-position: top right;
+    background-size: 100%;
+
+    &__container {
+      flex-direction: column-reverse;
+    }
+
+    &__content {
+      padding: 50px 0 10px;
+      width: 100%;
+    }
+
+    &__content-title h2 {
+      font-size: 45px;
+    }
+
+    &__content-text p {
+      max-width: 60ch;
+    }
+
+    &__dummy-box {
+      padding: 250px 0;
+    }
+  }
+  // HERO END
+
+  // FEATURE START
+  .feature {
+    height: 70vh;
+
+    &__tab {
+      gap: 50px;
+      margin-top: 60px;
+    }
+
+    &__tab-image {
+      height: 0;
+    }
+
+    &__tab-contents p {
+      max-width: 100ch;
+    }
+  }
+  // FEATURE END
+
+  // DOWNLOAD START
+  .download {
+    :nth-child(2n) {
+      margin-top: 0;
+    }
+
+    :nth-child(3) {
+      margin-top: 0;
+    }
+
+    :last-child {
+      // (If any single box left alone at bottom, this code will help it to be center at the bottom)
+      margin: 0 auto;
+    }
+
+    &__container {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    &__box {
+      width: 47%;
+      height: 235px;
+    }
+
+    &__button a {
+      padding: 15px 20px;
+    }
+  }
+  // DOWNLOAD END
+
+  // FAQ START
+  .faq {
+    &__container {
+      width: 55%;
+    }
+  }
+  // FAQ END
+}
+
+/* LARGE DEVICES (DESKTOPS, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  // VARIABLES
+  $section-margin: 30px 0;
+
+  // HEADER START
+  .header {
+    &__menu {
+      gap: 30px;
+
+      ul {
+        gap: 30px;
+      }
+    }
+  }
+  // HEADER END
+
+  // HERO START
+  .hero {
+    margin: $section-margin;
+
+    &__content {
+      border: none;
+      padding: 60px 0;
+    }
+
+    &__content-title h2 {
+      font-size: 35px;
+    }
+  }
+  // HERO END
+
+  // FEATURE START
+  .feature {
+    height: 82vh;
+
+    &__tab-image {
+      height: 300px;
+    }
+  }
+  // FEATURE END
+
+  // DOWNLOAD START
+  .download {
+    :nth-child(2n) {
+      margin-top: 0;
+    }
+
+    :nth-child(3) {
+      margin-top: 0;
+    }
+
+    :last-child {
+      // (If any single box left alone at bottom, this code will help it to be center at the bottom)
+      margin: 0 auto;
+    }
+
+    &__container {
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    &__box {
+      width: 48%;
+      height: 250px;
+    }
+  }
+  // DOWNLOAD END
+
+  // FAQ START
+  .faq {
+    &__container {
+      width: 40%;
+    }
+  }
+  // FAQ END
+}
+
+/* EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  // FEATURE START
+  .feature {
+    height: 95vh;
+
+    &__tab-image {
+      height: 350px;
+    }
+  }
+  // FEATURE END
+
+  // DOWNLOAD START
+  .download {
+    &__container {
+      gap: 20px;
+    }
+
+    &__box {
+      padding: 40px 0 15px;
+      width: 33%;
+    }
+  }
+  // DOWNLOAD END
+}
+
+/* EXTRA EXTRA LARGE DEVICES (LARGE DESKTOPS, 1400px and up) */
+@media (min-width: 1400px) {
+  // FEATURE START
+  .feature {
+    height: 105vh;
+  }
+  // FEATURE END
+}
+>>>>>>> c4f53ac00b62020d184168dedb746af07ee5fbde
