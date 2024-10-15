@@ -261,7 +261,7 @@ i:hover {
 }
 
 .hero {
-  background-image: url(/image/hero/hero-bg.png);
+  background-image: url(../image/hero/hero-bg.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 48%;
