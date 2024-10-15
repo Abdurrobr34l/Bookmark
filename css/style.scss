@@ -1,0 +1,495 @@
+@import "_reset.scss";
+@import "_common.scss";
+@import "_variable.scss";
+
+// HEADER START
+.header {
+  padding: 30px 0;
+
+  &.active {
+    background: rgba(37, 43, 70, 0.914);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+
+    .header__logo span,
+    .header__toggler i {
+      color: #fff;
+    }
+
+    .header__logo .circle {
+      color: #fff;
+    }
+
+    .header__logo .bookmark {
+      color: #252b46e9;
+    }
+  }
+
+  &__container {
+    justify-content: space-between;
+  }
+
+  &__logo {
+    span {
+      margin-left: -10px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    .bookmark {
+      position: relative;
+      right: 26px;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    &:hover {
+      .circle {
+        color: $primary-clr;
+      }
+      .bookmark {
+        color: #fff;
+      }
+      span {
+        color: $heading-clr;
+      }
+    }
+  }
+
+  &__menu {
+    gap: 50px;
+
+    ul {
+      gap: 50px;
+    }
+  }
+
+  &__toggler {
+    display: none;
+  }
+}
+// HEADER END
+
+// HAMBURGER MENU START
+.hamburger-menu {
+  display: none;
+  position: fixed;
+  bottom: 100%;
+  width: 100%;
+  height: 86.4vh;
+  background: rgba(37, 43, 70, 0.914);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  transition: 0.53s;
+
+  &.active {
+    bottom: 0;
+  }
+
+  &__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__menu {
+    width: 100%;
+    padding: 20px 0;
+
+    li {
+      padding: 25px 0;
+
+      &:not(:nth-child(even)) {
+        border-top: 1px solid $text-clr;
+        border-bottom: 1px solid $text-clr;
+      }
+      a {
+        font-weight: 500;
+        color: #fff;
+
+        &:hover {
+          color: $accent-clr;
+        }
+      }
+    }
+  }
+
+  &__button {
+    margin: 10px 0 140px;
+    width: 100%;
+
+    a {
+      width: 75%;
+      background-color: transparent;
+      outline: 3px solid #fff;
+
+      &:hover {
+        color: $accent-clr;
+        background-color: transparent;
+        outline: 3px solid $accent-clr;
+      }
+    }
+  }
+
+  &__social-media {
+    i {
+      color: #fff;
+      &:hover {
+        color: $accent-clr;
+      }
+    }
+
+    i:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+// HAMBURGER MENU END
+
+// HERO START
+.hero {
+  background-image: url(/image/hero/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 48%;
+
+  &__content {
+    flex-direction: column;
+    gap: 30px;
+    padding: 100px 0;
+  }
+
+  &__content-title h2 {
+    font-size: 50px;
+    font-weight: 500;
+    max-width: 20ch;
+  }
+
+  &__content-text p {
+    max-width: 45ch;
+    line-height: 24px;
+  }
+
+  &__content-buttons {
+    gap: 15px;
+  }
+
+  &__content-buttons--secondary {
+    color: #606060;
+    background-color: #f7f7f7;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    &:hover {
+      color: #515151;
+      outline: 2px solid #606060;
+    }
+  }
+}
+// HERO END
+
+// FEATURE START
+.feature {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 50%;
+  height: 90vh;
+
+  &__tabs-button {
+    justify-content: center;
+    button {
+      padding: 20px 30px;
+      font-size: 16px;
+      color: $heading-clr;
+      box-shadow: 0 2px 0 0 #d3d3d372;
+
+      &:hover,
+      &.active {
+        // color: $accent-clr;
+        box-shadow: 0 2px 0 0 $accent-clr;
+      }
+    }
+  }
+
+  &__tab {
+    display: none;
+    align-items: center;
+    gap: 100px;
+    margin-top: 70px;
+
+    &.active {
+      display: flex;
+    }
+
+    & > * {
+      width: 50%;
+    }
+
+    &-image {
+      height: 400px;
+    }
+
+    &-contents {
+      p {
+        margin: 20px 0 30px;
+        max-width: 45ch;
+        line-height: 24px;
+      }
+
+      .button:hover a {
+        color: $primary-clr;
+      }
+
+      a:hover {
+        color: invert;
+      }
+    }
+  }
+}
+// FEATURE END
+
+// DOWNLOAD START
+.download {
+  &__container {
+    justify-content: space-between;
+    width: 70%;
+
+    :nth-child(2n) {
+      margin-top: 20px;
+    }
+
+    :nth-child(3) {
+      margin-top: 40px;
+    }
+  }
+
+  &__box {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 30px;
+    width: 31%;
+    height: 320px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 7px 8px;
+  }
+
+  &__title {
+    margin: 20px 0 5px;
+  }
+
+  &__bg {
+    margin: 30px 0 20px;
+  }
+}
+// DOWNLOAD END
+
+// FAQ START
+.faq {
+  &__container {
+    padding: 10px 0 0;
+    width: 32%;
+  }
+
+  &__question {
+    &:hover {
+      button {
+        color: $accent-clr;
+      }
+    }
+
+    button {
+      display: inline-block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: $heading-clr;
+      width: 100%;
+      border-top: 1px solid #d3d3d3c0;
+      border-bottom: 1px solid #d3d3d3c0;
+
+      .active,
+      .accordion:hover {
+        background-color: #ccc;
+      }
+
+      i {
+        transition: transform 0.3s ease, color 0.63s ease;
+        transform: rotate(0deg);
+        color: $primary-clr;
+      }
+
+      &.active {
+        color: $heading-clr;
+
+        i {
+          transform: rotate(180deg);
+          color: $accent-clr;
+        }
+      }
+    }
+  }
+
+  &__answer {
+    p {
+      line-height: 30px;
+    }
+  }
+
+  .panel {
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  &__button {
+    margin: $section-margin;
+  }
+}
+// FAQ END
+
+// CONTACT US START
+.contact {
+  border: 1px solid;
+  padding: 40px 0;
+  background-color: $primary-clr;
+  color: #ffffff;
+
+  &__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__mini-heading h6 {
+    letter-spacing: 5px;
+    font-weight: 400;
+  }
+
+  &__heading h2 {
+    margin: 0 auto;
+    max-width: 20ch;
+    color: #fff;
+  }
+
+  &__form {
+
+    input {
+      padding: 15px 100px 15px 10px;
+      background-color: #ffffff;
+      color: #707070;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    // .error {
+    //   position: relative;
+    //   right: 50px;
+    //   color: $accent-clr;
+    //   font-size: 20px;
+    //   display: none;
+
+    //   &:hover {
+    //     cursor: default;
+    //   }
+    }
+
+    button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-weight: 500;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+      background-color: $accent-clr;
+
+      &:hover {
+        color: $accent-clr;
+        background-color: #fff;
+        outline: 2px solid $accent-clr;
+      }
+    }
+
+    // p {
+    //   margin-left: 36px;
+    //   padding: 5px;
+    //   font-size: 12px;
+    //   width: 53%;
+    //   border-radius: 5px;
+    //   background-color: $accent-clr;
+    //   color: #fff;
+    //   text-align: justify;
+    // }
+
+    .error-message {
+      display: none;
+      margin-left: 39px;
+      padding: 5px;
+      font-size: 12px;
+      width: 55%;
+      border-radius: 5px;
+      color: #fff;
+      background-color: $accent-clr;
+      text-align: justify;
+    }
+
+    input:invalid + .error-message {
+      display: block;
+    }
+  }
+// CONTACT US END
+
+// FOOTER START
+.footer {
+  padding: 30px 0;
+  color: #fff;
+  background-color: #242946;
+
+  &__container {
+    justify-content: space-between;
+  }
+
+  &__link {
+    gap: 50px;
+
+    .logo {
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &__menu {
+    gap: 50px;
+
+    a {
+      color: #fff;
+      gap: 50px;
+
+      &:hover {
+        color: $accent-clr;
+      }
+    }
+  }
+
+  &__social {
+    i {
+      color: #fff;
+
+      &:hover {
+        color: $accent-clr;
+      }
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+// FOOTER END
