@@ -78,16 +78,16 @@ function switchTab(event) {
   // Change the background image of the feature container
   switch (targetTab) {
     case '1':
-      feature.style.backgroundImage = 'url(/image/features/tab-1.png)';
-      // feature.style.backgroundImage = 'url(../image/features/tab-1.png)';
+      // feature.style.backgroundImage = 'url(/image/features/tab-1.png)';
+      feature.style.backgroundImage = 'url(./image/features/tab-1.png)';
       break;
     case '2':
-      feature.style.backgroundImage = 'url(/image/features/tab-2.png)';
-      // feature.style.backgroundImage = 'url(../image/features/tab-2.png)';
+      // feature.style.backgroundImage = 'url(/image/features/tab-2.png)';
+      feature.style.backgroundImage = 'url(./image/features/tab-2.png)';
       break;
     case '3':
-      feature.style.backgroundImage = 'url(/image/features/tab-3.png)';
-      // feature.style.backgroundImage = 'url(../image/features/tab-3.png)';
+      // feature.style.backgroundImage = 'url(/image/features/tab-3.png)';
+      feature.style.backgroundImage = 'url(./image/features/tab-3.png)';
       break;
     default:
       feature.style.backgroundImage = 'none'; // Reset if no match
