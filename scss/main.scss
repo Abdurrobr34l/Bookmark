@@ -1,10 +1,10 @@
+
 @import "_reset.scss";
 @import "_common.scss";
 @import "_variable.scss";
 
 // HEADER START
 .header {
-  background-color: red;
   padding: 30px 0;
 
   &.active {
@@ -148,7 +148,7 @@
 
 // HERO START
 .hero {
-  background-image: url(../image/hero/hero-bg.png);
+  background-image: url(/image/hero/hero-bg.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 48%;
@@ -355,6 +355,7 @@
 
 // CONTACT US START
 .contact {
+  border: 1px solid;
   padding: 40px 0;
   background-color: $primary-clr;
   color: #ffffff;
@@ -376,7 +377,6 @@
   }
 
   &__form {
-
     input {
       padding: 15px 100px 15px 10px;
       background-color: #ffffff;
@@ -396,51 +396,51 @@
     //   &:hover {
     //     cursor: default;
     //   }
-    }
+  }
 
-    button {
-      display: inline-block;
-      padding: 15px 30px;
-      font-weight: 500;
-      border-radius: 5px;
-      border: none;
-      color: #fff;
-      background-color: $accent-clr;
+  button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: $accent-clr;
 
-      &:hover {
-        color: $accent-clr;
-        background-color: #fff;
-        outline: 2px solid $accent-clr;
-      }
-    }
-
-    // p {
-    //   margin-left: 36px;
-    //   padding: 5px;
-    //   font-size: 12px;
-    //   width: 53%;
-    //   border-radius: 5px;
-    //   background-color: $accent-clr;
-    //   color: #fff;
-    //   text-align: justify;
-    // }
-
-    .error-message {
-      display: none;
-      margin-left: 39px;
-      padding: 5px;
-      font-size: 12px;
-      width: 55%;
-      border-radius: 5px;
-      color: #fff;
-      background-color: $accent-clr;
-      text-align: justify;
-    }
-
-    input:invalid + .error-message {
-      display: block;
+    &:hover {
+      color: $accent-clr;
+      background-color: #fff;
+      outline: 2px solid $accent-clr;
     }
   }
+
+  // p {
+  //   margin-left: 36px;
+  //   padding: 5px;
+  //   font-size: 12px;
+  //   width: 53%;
+  //   border-radius: 5px;
+  //   background-color: $accent-clr;
+  //   color: #fff;
+  //   text-align: justify;
+  // }
+
+  .error-message {
+    display: none;
+    margin-left: 39px;
+    padding: 5px;
+    font-size: 12px;
+    width: 55%;
+    border-radius: 5px;
+    color: #fff;
+    background-color: $accent-clr;
+    text-align: justify;
+  }
+
+  input:invalid + .error-message {
+    display: block;
+  }
+}
 // CONTACT US END
 
 // FOOTER START
