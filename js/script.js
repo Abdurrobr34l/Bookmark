@@ -102,7 +102,7 @@ buttons.forEach(button => {
 // Set the first tab and background as active by default
 tabs[0].classList.add('active');
 tabs[0].style.display = 'flex'; // Show the first tab initially
-feature.style.backgroundImage = 'url(../image/features/tab-1.png)'; // Set the default background
+feature.style.backgroundImage = 'url(./image/features/tab-1.png)'; // Set the default background
 buttons[0].classList.add('active'); // Highlight the first button by default
 // FEATURE CAROUSEL END
 // -------------------------------------------
